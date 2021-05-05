@@ -60,7 +60,7 @@ ul li{
 }
 
 li a{
-    color: $default-word-color;
+    color: $default-dark-color;
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;

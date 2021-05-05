@@ -69,6 +69,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "./scss/general.scss";
+
     footer{
         background-image: url('../assets/img/footer-bg.jpg');
         background-size: cover;
@@ -106,7 +108,7 @@ export default {
 
         a{  
             text-decoration: none;
-            color: #888888;
+            color: $default-color;
             line-height: 1.5rem;
             text-transform: capitalize;
             transition: 0.3s;
