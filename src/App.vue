@@ -2,6 +2,8 @@
   <div id="app">
     <Header />
 
+    <JumboTron />
+
     <Banner />
 
     <Footer />
@@ -12,6 +14,7 @@
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Footer from '@/components/Footer.vue';
+import JumboTron from '@/components/JumboTron.vue';
 
 export default {
   name: 'App',
@@ -19,6 +22,7 @@ export default {
   Header,
   Banner,
   Footer,
+  JumboTron,
   }
 }
 </script>
