@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="container">
-            <img :src="img.url" :alt="img.name">
+            <a href=""><img :src="img.url" :alt="img.name"></a>
             <ul>
                 <li v-for="(link, index) in links" :key="link.text + index"><a href="link.  url">{{link.text}}</a></li>
             </ul>
@@ -18,23 +18,25 @@ export default {
             img: {name:'dc-logo', url: require('@/assets/img/dc-logo.png'),},
 
             links: [
-                {text: 'characters', url: "/"},
-                {text: 'comics', url: "/"},
-                {text: 'movies', url: "/"},
-                {text: 'tv', url: "/"},
-                {text: 'games', url: "/"},
-                {text: 'collectibles', url: "/"},
-                {text: 'videos', url: "/"},
-                {text: 'fans', url: "/"},
-                {text: 'news', url: "/"},
-                {text: 'shop', url: "/"},
+                {text: 'characters', url: "@"},
+                {text: 'comics', url: "@"},
+                {text: 'movies', url: "@"},
+                {text: 'tv', url: "@"},
+                {text: 'games', url: "@"},
+                {text: 'collectibles', url: "@"},
+                {text: 'videos', url: "@"},
+                {text: 'fans', url: "@"},
+                {text: 'news', url: "@"},
+                {text: 'shop', url: "@"},
             ],
         }
     },
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import "./scss/general.scss";
+
 .container{
     display: flex;
     align-items: center;
@@ -48,20 +50,18 @@ img{
 ul{
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 ul li{
     padding: 40px 0;
-    margin: 0 15px 0;
+    margin: 0 15px;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.3s;
 }
 
 li a{
-    color: #494b4e;
+    color: $default-word-color;
     text-decoration: none;
     font-size: 14px;
     text-transform: uppercase;
@@ -74,10 +74,10 @@ ul li:last-child{
 }
 
 ul li:hover{
-    border-bottom-color: #0282f9;
+    border-bottom-color: $brand-color;
 }
 
 ul li:hover a{
-    color: #0282f9;
+    color: $brand-color;
 }
 </style>
