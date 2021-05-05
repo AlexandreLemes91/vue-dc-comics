@@ -3,18 +3,22 @@
     <Header />
 
     <Banner />
+
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
   Header,
   Banner,
+  Footer,
   }
 }
 </script>
@@ -33,5 +37,9 @@ export default {
 .container {
   margin: 0 auto;
   width: 1300px;
+}
+
+li{
+  list-style: none;
 }
 </style>

@@ -49,7 +49,6 @@ img{
 
 ul{
     display: flex;
-    list-style: none;
 }
 
 ul li{
